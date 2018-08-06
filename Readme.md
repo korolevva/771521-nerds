@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Виталий Королев](https://up.htmlacademy.ru/htmlcss/22/user/771521).
-* Наставник: `Неизвестно`.
+* Наставник: [Георгий Гусаков](https://htmlacademy.ru/profile/georgegus27).
 
 ---
 
