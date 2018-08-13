@@ -7,17 +7,17 @@
   <body>
 
    <header class="main-header">
-     <a class="main-header-logo" href="#target">
-       <img src="img/logo.svg" width="165" height="65" alt="Логотип дизайн студии nёrds">
-     </a>
-      <nav class="navigation">
-          <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="studio.html">Студия</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="customers.html">Клиенты</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="contacts.html">Контакты</a></li>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="165" height="65" alt="Логотип дизайн студии nёrds">
+        </a>
+        <ul class="site navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="basket">
+        <ul class="basket-navigation">
           <li class="basket-link">Корзина</li>
         </ul>
       </nav>
@@ -25,128 +25,131 @@
 
      <main class="container">
       <h1 class="visually-hidden">Дизайн студия nёrds</h1>
-      <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slide slide1">
-          <p class="slide-slogan">Долго, дорого,скрупулезно.</p>
-          <p class="slide-content">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="slide-button" href="#target">Узнать больше</a>
+      <section class="sliders">
+        <div class="slider">
+          <div class="slider-texts">
+            <p class="slider-text-title">Долго, дорого,скрупулезно.</p>
+            <p class="slider-text-normal">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="slider-button">Узнать больше</a>
+          </div>
         </div>
-        <div class="slide slide2">
-          <p class="slide-slogan">Любим математику как никто другой</p>
-          <p class="slide-content">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="slide-button" href="#target">Узнать больше</a>
+        <div class="slider">
+          <div class="slider-texts">
+            <p class="slider-text-title">Любим математику как никто другой</p>
+            <p class="slider-text-normal">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-button">Узнать больше</a>
+          </div>
         </div>
-        <div class="slide slide3">
-          <p class="slide-slogan">Только ночь,только хардкор</p>
-          <p class="slide-content">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="slide-button" href="#target">Узнать больше</a>
+        <div class="slider">
+          <div class="slider-texts">
+            <p class="slider-text-title">Только ночь,только хардкор</p>
+            <p class="slider-text-normal">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="slider-button">Узнать больше</a>
+          </div>
         </div>
-        <div class="slider-control">
-          <!--Здесь будут кнопки переключения слайдера-->
-        </div>
+        <!--Здесь будут кнопки переключения слайдера-->
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="features-list">
-          <li class="features-item">
-            <div class="features-icon-notebook"></div>
+          <li class="feature-item-notebook">
+            <img src="img/notebook.png" width="300" height="147" alt="Ноутбук">
             <h3>Веб-сайты</h3>
-            <p class="features-item-content">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="features-item-button" href="#target">Заказать</a>
+            <p class="feature-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="feature-item-button">Заказать</a>
           </li>
-          <li class="features-item">
-            <div class="features-icon-mobilephone"></div>
+          <li class="feature-item-mobilephone">
+            <img src="img/mobilephone.png" width="300" height="147" alt="Ноутбук">
             <h3>Приложения</h3>
-            <p class="features-item-content">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="features-item-button" href="#target">Заказать</a>
+            <p class="feature-item-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="feature-item-button">Заказать</a>
           </li>
-          <li class="features-item">
-            <div class="features-icon-presentation"></div>
+          <li class="feature-item-presentation">
+            <img src="img/presentation.png" width="300" height="147" alt="Ноутбук">
             <h3>Презентации</h3>
-            <p class="features-item-content">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="features-item-button" href="#target">Заказать</a>
+            <p class="feature-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="feature-item-button">Заказать</a>
           </li>
         </ul>
       </section>
 
-      <section class="about">
+      <section class="about-company">
         <h2 class="visually-hidden">О компании</h2>
-        <div class="about-column">
-          <p class="about-slogan"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-          <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="about-text-bold">Выполняем заказы на разработку:</p>
-          <ul class="about-list">
-            <li class="about-item">Веб-сайтов любой сложности</li>
-            <li class="about-item">Мобильных приложений для iOS и Android</li>
-            <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
+        <div class="about-us">
+          <p class="about-us-text-title"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p class="about-us-text-normal">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        </div>
+        <div class="about-logo">
+          <img src="img/about-logo.png" width="400" height="200" alt="Лого nёrds">
+        </div>
+        <div class="services">
+          <h4>Выполняем заказы на разработку:</h4>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="about-column">
-          <img src="img/about-logo.png" width="400" height="200" alt="Лого nёrds">
-          <p class="about-text-bold">с 2004 года любим точность во всем:</p>
-          <table class="advantages-table">
-            <tr class="advantages-table-row">
-              <td class="advantages-table-column">Уровень самоотдачи</td>
-              <td class="advantages-table-column">Соблюдение сроков</td>
-              <td class="advantages-table-column">Минимальная предоплата</td>
+        <div class="advantages">
+          <h4>с 2004 года любим точность во всем:</h4>
+          <table>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
             </tr>
-            <tr class="advantages-table-row">
-              <td class="advantages-table-column">146<sup>%</sup></td>
-              <td class="advantages-table-column">100<sup>%</sup></td>
-              <td class="advantages-table-column">50<sup>%</sup></td>
+            <tr>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
             </tr>
           </table>
         </div>
       </section>
       <section class="customer">
-        <h2 class="visually-hidden">Наши проекты</h2>
-        <a href="#target">
+        <a href="#">
           <img src="img/htmlacademy.png" width="250" height="150" alt="HTML Academy">
         </a>
-        <a href="#target">
+        <a href="#">
           <img src="img/Borodinski.png" width="250" height="150" alt="Borodinski">
         </a>
-        <a href="#target">
+        <a href="#">
           <img src="img/Pink.png" width="250" height="150" alt="Pink">
         </a>
-        <a href="#target">
+        <a href="#">
           <img src="img/Mishka.png" width="250" height="150" alt="Mishka">
         </a>
       </section>
       <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <div class="card"></div>
+        <img src="img/map.png" width="1440" height="415" alt="Карта">
         <div class="contacts">
           <h4>Nёrds design studio</h4>
-          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-phone">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
           <a class="contacts-button" href="contacts.html">Напишите нам</a>
         </div>
       </section>
      </main>
 
    <footer class="main-footer">
-     <h2 class="visually-hidden">Социальные сети</h2>
      <div class="footer-social">
       <b>Давайте дружить!</b>
-        <ul class="social-list">
-          <li class="social-item"><a class="social-button" href="#target">Вконтакте</a></li>
-          <li class="social-item"><a class="social-button" href="#target">Фейсбук</a></li>
-          <li class="social-item"><a class="social-button" href="#target">Инстаграм</a></li>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
      <div class="friends">
-       <p class="friends-content">Давайте дружить, это выгодно!</p>
+       <p class="friends-text">Давайте дружить, это выгодно!</p>
        <p>Скидка 10% для друзей из социальных сетей.</p>
      </div>
    </footer>
-
    <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <!-- Здесь будет форма -->
-    <button>Закрыть окно</button>
+    <span class="modal-close">x</span>
     </section>
   </body>
 </html>
