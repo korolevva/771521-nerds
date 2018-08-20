@@ -11,10 +11,10 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="#target">Студия</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#target">Клиенты</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="studio.html">Студия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="customers.html">Клиенты</a></li>
           <li class="navigation-item"><a class="navigation-link navigation-link-current">Магазин</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#target">Контакты</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="contacts.html">Контакты</a></li>
         </ul>
         <a class="basket-link">Корзина</a>
       </nav>
@@ -23,27 +23,60 @@
      <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
        <section class="filters">
-         <h2 class="visually-hidden">Фильтры</h2>
-         <p class="options-title">Стоимость:</p>
-         <!-- Здесь будет форма -->
-         <form class="filter" method="get" action="http://echo.htmlacademy.ru">
-
-         </form>
-         <p class="options-title">Сетка:</p>
-
-         <p class="options-title">Особенности:</p>
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filters" method="post" action="https://echo.htmlacademy.ru">
+          <p class="options-title">Стоимость:</p>
+          <div class="range-filter">
+            <div class="bar"></div>
+            <div class="togler togler-min"></div>
+            <div class="togler togler-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+               От
+              <input type="text" name="price-min" value="0">
+            </label>
+            <label class="max-price">
+               До
+              <input type="text" name="price-max" value="15000">
+            </label>
+          </div>
+          <fieldset class="grid">
+            <p class="options-title">Сетка:</p>
+            <input type="radio" name="grid-option" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+            <input type="radio" name="grid-option" id="fixed">
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" name="grid-option" id="rubber">
+            <label for="rubber">Резиновая</label>
+          </fieldset>
+          <fieldset class="specifics">
+            <p class="options-title">Особенности:</p>
+            <input type="checkbox" id="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" id="advantages">
+            <label for="advantages">Блок преимуществ</label>
+            <input type="checkbox" id="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" id="galery">
+            <label for="galery">Галерея</label>
+            <input type="checkbox" id="basket">
+            <label for="basket">Корзина</label>
+          </fieldset>
+          <input class="show-button" type="submit" value="Показать">
+        </form>
        </section>
 
        <section class="sorting">
-         <h2 class="visually-hidden">Сортировка</h2>
+        <h2 class="visually-hidden">Сортировка</h2>
         <p class="options-title">Сортировать:</p>
         <ul class="sorting-list">
           <li class="sorting-item"><a class="sorting-item-current" href="#target">По цене</a></li>
           <li class="sorting-item"><a href="#target">По типу</a></li>
           <li class="sorting-item"><a href="#target">По названию</a></li>
           <li class="sorting-dir">
-            <a class="sorting-dir-link sorting-dir-up">По возрастанию</a>
-            <a class="sorting-dir-link sorting-dir-dn">По убыванию</a>
+            <a class="sorting-dir-link sorting-dir-up" href="#target">По возрастанию</a>
+            <a class="sorting-dir-link sorting-dir-dn" href="#target">По убыванию</a>
           </li>
         </ul>
        </section>
@@ -127,7 +160,7 @@
       </section>
 
       <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts">
           <p class="contacts-title">Nёrds design studio</p>
           <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -153,9 +186,28 @@
     </footer>
 
     <section class="modal modal-write-us">
-    <h2 class="modal-title">Напишите нам</h2>
-    <!-- Здесь будет форма -->
-      <button class="modal-button">Закрыть окно</button>
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="half-width">
+          <label class="modal-label" for="name">
+            Ваше имя:
+          </label>
+          <input type="text" name="name" id="name" value="Имя Фамилия">
+        </div>
+
+        <div class="half-width">
+          <label class="modal-label" for="e-mail">
+            Ваш e-mail:
+          </label>
+          <input type="text" name="e-mail" id="e-mail" value="email@example.com">
+        </div>
+
+        <label class="modal-label" for="text-letter">
+          Текст письма:
+        </label>
+        <textarea class="modal-textarea" name="text-letter" id="text-letter">В свободной форме</textarea>
+        <input class="close-button" type="submit" value="Закрыть окно">
+      </form>
     </section>
    </body>
  </html>

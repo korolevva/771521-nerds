@@ -129,7 +129,7 @@
      </main>
 
     <footer class="main-footer">
-     <h2 class="visually-hidden">Социальные сети</h2>
+     <h2 class="visually-hidden">Контакты</h2>
      <div class="footer-social">
         <ul class="social-list">
           <li class="social-item"><a class="social-link" href="#target">Вконтакте</a></li>
@@ -144,9 +144,28 @@
     </footer>
 
     <section class="modal modal-write-us">
-    <h2 class="modal-title">Напишите нам</h2>
-    <!-- Здесь будет форма -->
-      <button class="modal-button">Закрыть окно</button>
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="half-width">
+          <label class="modal-label" for="name">
+            Ваше имя:
+          </label>
+          <input type="text" name="name" id="name" value="Имя Фамилия">
+        </div>
+
+        <div class="half-width">
+          <label class="modal-label" for="e-mail">
+            Ваш e-mail:
+          </label>
+          <input type="text" name="e-mail" id="e-mail" value="email@example.com">
+        </div>
+
+        <label class="modal-label" for="text-letter">
+          Текст письма:
+        </label>
+        <textarea class="modal-textarea" name="text-letter" id="text-letter">В свободной форме</textarea>
+        <input class="modal-button" type="button" value="Закрыть окно">
+      </form>
     </section>
   </body>
 </html>
