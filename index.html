@@ -28,13 +28,12 @@
     <main class="main-content">
       <h1 class="visually-hidden">Дизайн студия nёrds</h1>
       <section class="slider">
-        <div class="controls-container">
-          <button class="slider-btn1">Слайд-1</button>
-          <button class="slider-btn2">Слайд-2</button>
-          <button class="slider-btn2">Слайд-3</button>
-        </div>
-
         <h2 class="visually-hidden">Слайдер</h2>
+        <div class="controls-container">
+          <button class="slider-btn active">Слайд-1</button>
+          <button class="slider-btn">Слайд-2</button>
+          <button class="slider-btn">Слайд-3</button>
+        </div>
         <div class="slide active">
           <p class="slide-slogan">Долго, дорого, скрупулезно.</p>
           <p class="slide-content">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -46,7 +45,7 @@
           <a class="slide-button" href="#target">Узнать больше</a>
         </div>
         <div class="slide">
-          <p class="slide-slogan">Только ночь,только хардкор</p>
+          <p class="slide-slogan">Только ночь, только хардкор</p>
           <p class="slide-content">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="slide-button" href="#target">Узнать больше</a>
         </div>
@@ -156,22 +155,22 @@
       <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="half-width">
-          <label class="modal-label">
+          <label class="modal-field">
             <span class="modal-name">Ваше имя:</span>
-            <input class="modal-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="modal-input" type="text" name="name" placeholder="Имя Фамилия">
           </label>
         </div>
 
         <div class="half-width">
-          <label class="modal-label">
-            <span class="modal-email">Ваш e-mail:</span>
-            <input class="modal-text" type="text" name="e-mail" placeholder="email@example.com">
+          <label class="modal-field">
+            <span class="modal-name">Ваш e-mail:</span>
+            <input class="modal-input" type="text" name="e-mail" placeholder="email@example.com">
           </label>
         </div>
 
-        <label class="modal-label">
-          <span class="modal-textlatter">Текст письма:</span>
-          <textarea class="modal-textarea" name="text-letter" placeholder="В свободной форме"></textarea>
+        <label class="modal-field">
+          <span class="modal-name">Текст письма:</span>
+          <textarea class="modal-input textarea" name="text-letter" placeholder="В свободной форме"></textarea>
         </label>
         <input class="close-button" type="submit" value="Закрыть окно">
       </form>
