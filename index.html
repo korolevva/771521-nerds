@@ -3,30 +3,53 @@
    <head>
      <meta charset="utf-8">
      <title>Дизайн студия nёrds</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
    </head>
   <body>
 
     <header class="main-header">
-      <span class="main-header-logo">
-       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии nёrds">
-      </span>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="studio.html">Студия</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="customers.html">Клиенты</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="contacts.html">Контакты</a></li>
-        </ul>
-        <a class="basket-link">Корзина</a>
-      </nav>
+      <div class="container">
+        <span class="main-header-logo">
+         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии nёrds">
+        </span>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item"><a class="navigation-link" href="studio.html">Студия</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="customers.html">Клиенты</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <a class="basket-link">Корзина</a>
+        </nav>
+      </div>
     </header>
 
-      <main class="container">
+    <main class="main-content">
       <h1 class="visually-hidden">Дизайн студия nёrds</h1>
       <section class="slider">
+        <div class="controls-container">
+          <label class="slider-controls">
+            <span class="slider-label">
+              <input class="visually-hidden" type="radio" name="slider-control" value="toggle-1" checked>
+            </span>
+          </label>
+          <label class="slider-controls">
+            <span class="slider-label">
+              <input class="visually-hidden" type="radio" name="slider-control" value="toggle-2">
+            </span>
+          </label>
+          <label class="slider-controls">
+            <span class="slider-label">
+              <input class="visually-hidden" type="radio" name="slider-control" value="toggle-3">
+            </span>
+          </label>
+        </div>
+
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="slide active">
-          <p class="slide-slogan">Долго, дорого,скрупулезно.</p>
+          <p class="slide-slogan">Долго, дорого, скрупулезно.</p>
           <p class="slide-content">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a class="slide-button" href="#target">Узнать больше</a>
         </div>
@@ -41,7 +64,6 @@
           <a class="slide-button" href="#target">Узнать больше</a>
         </div>
         <div class="slider-controls">
-          <!--Здесь будут кнопки переключения слайдера-->
         </div>
       </section>
 
@@ -126,7 +148,7 @@
           <a class="contacts-button" href="contacts.html">Напишите нам</a>
         </div>
       </section>
-     </main>
+    </main>
 
     <footer class="main-footer">
      <h2 class="visually-hidden">Контакты</h2>
@@ -143,28 +165,28 @@
      </div>
     </footer>
 
-    <section class="modal modal-write-us">
+    <section class="modal">
       <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="half-width">
-          <label class="modal-label" for="name">
+          <label class="modal-label" >
             Ваше имя:
+            <input class="modal-name" type="text" name="name" placeholder="Имя Фамилия">
           </label>
-          <input type="text" name="name" id="name" value="Имя Фамилия">
         </div>
 
         <div class="half-width">
-          <label class="modal-label" for="e-mail">
+          <label class="modal-label">
             Ваш e-mail:
+            <input class="modal-text" type="text" name="e-mail" placeholder="email@example.com">
           </label>
-          <input type="text" name="e-mail" id="e-mail" value="email@example.com">
         </div>
 
-        <label class="modal-label" for="text-letter">
+        <label class="modal-label">
           Текст письма:
+          <textarea class="modal-textarea" name="text-letter" placeholder="В свободной форме"></textarea>
         </label>
-        <textarea class="modal-textarea" name="text-letter" id="text-letter">В свободной форме</textarea>
-        <input class="modal-button" type="button" value="Закрыть окно">
+        <input class="close-button" type="submit" value="Закрыть окно">
       </form>
     </section>
   </body>
