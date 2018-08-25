@@ -3,7 +3,7 @@
    <head>
      <meta charset="utf-8">
      <title>Каталог товаров</title>
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
   </head>
@@ -42,11 +42,11 @@
             <div class="price-controls">
               <label class="price">
                  От
-                <input class="price-min" type="text" name="price-min" placeholder="0">
+                <input class="price-value" type="text" name="price-min" placeholder="0">
               </label>
               <label class="price">
                  До
-                <input class="price-max" type="text" name="price-max" placeholder="15 000">
+                <input class="price-value" type="text" name="price-max" placeholder="15 000">
               </label>
             </div>
           </fieldset>
@@ -139,7 +139,7 @@
                 <a class="catalog-item-link" href="#target">Sedona</a>
               </h3>
               <p class="catalog-item-text">Информационный сайт для туристов</p>
-              <a class="button" href="#target">9 900 руб.</a>
+              <a class="catalog-button" href="#target">9 900 руб.</a>
             </div>
           </li>
 
@@ -150,7 +150,7 @@
                 <a class="catalog-item-link" href="#target">Pink App</a>
               </h3>
               <p class="catalog-item-text">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button" href="#target">9 900 руб.</a>
+              <a class="catalog-button" href="#target">9 900 руб.</a>
             </div>
           </li>
 
@@ -161,7 +161,7 @@
                 <a class="catalog-item-link" href="#target">Barbershop</a>
               </h3>
               <p class="catalog-item-text">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button" href="#target">9 900 руб.</a>
+              <a class="catalog-button" href="#target">9 900 руб.</a>
             </div>
           </li>
 
@@ -172,7 +172,7 @@
                 <a class="catalog-item-link" href="#target">MISHKA</a>
               </h3>
               <p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
-              <a class="button" href="#target">9 900 руб.</a>
+              <a class="catalog-button" href="#target">9 900 руб.</a>
             </div>
           </li>
 
@@ -183,7 +183,7 @@
                 <a class="catalog-item-link" href="#target">A Plus</a>
               </h3>
               <p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
-              <a class="button" href="#target">9 900 руб.</a>
+              <a class="catalog-button" href="#target">9 900 руб.</a>
             </div>
           </li>
 
@@ -194,7 +194,7 @@
                 <a class="catalog-item-link" href="#target">КВАСТ</a>
               </h3>
               <p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="button" href="#target">9 900 руб.</a>
+              <a class="catalog-button" href="#target">9 900 руб.</a>
             </div>
           </li>
         </ul>
@@ -208,23 +208,41 @@
       </section>
 
       <section class="map">
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Карта</h2>
         <div class="contacts">
           <p class="contacts-title">Nёrds design studio</p>
           <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-phone">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <p class="contacts-phone">тел. <a class="contacts-tel" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
           <a class="contacts-button" href="contacts.html">Напишите нам</a>
         </div>
+        <div class="map-picture">
+          <img src="img/map.jpg" width="1440" height="416" alt="Как нас найти">
+        </div>
       </section>
-     </main>
+    </main>
 
     <footer class="main-footer">
-     <h2 class="visually-hidden">Социальные сети</h2>
+     <h2 class="visually-hidden">Контакты</h2>
      <div class="footer-social">
         <ul class="social-list">
-          <li class="social-item"><a class="social-button" href="#target">Вконтакте</a></li>
-          <li class="social-item"><a class="social-button" href="#target">Фейсбук</a></li>
-          <li class="social-item"><a class="social-button" href="#target">Инстаграм</a></li>
+          <li class="social-item">
+            <a class="social-link" href="#target">
+              Вконтакте
+              <div class="sphere-vk"></div>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#target">
+              Фейсбук
+              <div class="sphere-fb"></div>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#target">
+            Инстаграм
+            <div class="sphere-insta"></div>
+            </a>
+          </li>
         </ul>
       </div>
      <div class="friends">
@@ -254,7 +272,8 @@
           <span class="modal-name">Текст письма:</span>
           <textarea class="modal-input textarea" name="text-letter" placeholder="В свободной форме"></textarea>
         </label>
-        <input class="close-button" type="submit" value="Закрыть окно">
+        <input class="modal-button-close" type="submit" value="Закрыть окно">
+        <button class="modal-button-send">Отправить</button>
       </form>
     </section>
    </body>

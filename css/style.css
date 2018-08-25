@@ -410,7 +410,7 @@ a {
 .modal-button-send {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -428,6 +428,254 @@ a {
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
 }
+
+.page-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.options-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
+.range,
+.grid,
+.specifics {
+  border: none;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #283136;
+}
+
+.price-value {
+  background-color: #eeeeee;
+  color: #000000;
+  border: none;
+}
+
+.price-value:focus,
+.price-value:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+  border: none;
+}
+
+.price-value:active {
+  background-color: #d5d5d5;
+  color: #000000;
+  border: none;
+}
+
+
+.grid-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #283136;
+}
+
+.grid-label:hover {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #283136;
+}
+
+.grid-label:disabled {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(40,49,54,0.3);
+}
+
+.show-button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.show-button:hover,
+.show-button:focus {
+  background-color: #dfdfdf;
+}
+
+.show-button:active {
+  background-color: #d5d5d5;
+  color: rgba(255,255,255,0.3);
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+
+
+.sorting-item-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.3);
+}
+
+.sorting-item-link:hover {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.6);
+}
+
+.sorting-item-link:focus,
+.sorting-item-link:active {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(0,0,0,1);
+}
+
+.sorting-item-current {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(0,0,0);
+}
+
+.sorting-item-current:hover,
+.sorting-item-current:focus,
+.sorting-item-current:active {
+  color: rgba(0,0,0);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  text-align: center;
+}
+
+.catalog-item-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
+
+.catalog-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+  background-color: #e74246;
+}
+
+.catalog-button:active {
+  background-color: #d7373b;
+}
+
+.pagination {
+  list-style: none;
+  text-align: center;
+}
+
+.pagination-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.pagination-link-current {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
+}
+
+.pagination-link:hover {
+  background-color: #dfdfdf;
+  border: none;
+}
+
+.pagination-link:active {
+  background-color: #d5d5d5;
+  border: none;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
+}
+
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
+}
+
+
+
 
 
 
