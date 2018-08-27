@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: #283136;
-
   background-color: #ffffff;
 }
 
@@ -17,6 +15,17 @@ a {
 
 .main-header {
   background-color: #eeeeee;
+}
+
+.button-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  border: none;
 }
 
 .navigation {
@@ -29,6 +38,8 @@ a {
 }
 
 .navigation-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -61,25 +72,13 @@ a {
 }
 
 .slide-content {
-  font-size: 16px;
-  font-weight: 400;
+  font: inherit;
   line-height: 55px;
   color: #283136;
 }
 
-
-
 .slide-button {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
   background-color: #fb565a;
-  border: none;
-
 }
 
 .slide-button:hover,
@@ -93,6 +92,8 @@ a {
 }
 
 .features-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -126,12 +127,11 @@ a {
 }
 
 .features-item-content {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font: inherit;
   color: #283136;
 }
 
+/*
 .features-item-button {
   font-size: 16px;
   line-height: 18px;
@@ -142,7 +142,7 @@ a {
   border: none;
   text-transform: uppercase;
 }
-
+*/
 .features-button-red {
   background-color: #fb565a;
 }
@@ -193,9 +193,7 @@ a {
 }
 
 .about-text {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 24px;
+  font: inherit;
   text-align: left;
   color: #283136;
 }
@@ -210,21 +208,19 @@ a {
 }
 
 .about-list {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font: inherit;
   text-align: left;
   color: #283136;
 }
 
 .about-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .about-item {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font: inherit;
   text-align: left;
   color: #283136;
 }
@@ -245,7 +241,7 @@ a {
   color: #000000;
 }
 
-.advantages-table-column-up {
+.advantages-table-column-top {
   margin: 0;
   padding-bottom: 26px;
   padding-right: 26px;
@@ -256,11 +252,11 @@ a {
   color: #000000;
 }
 
-.advantages-table-column-up sup {
+.advantages-table-column-top sup {
   font-size: 26px;
 }
 
-.advantages-table-column-down {
+.advantages-table-column-bottom {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -278,7 +274,7 @@ a {
 }
 
 .projects-link:active {
-  opacity: 0,1;
+  opacity: 0.1;
 }
 
 .contacts-title {
@@ -289,15 +285,7 @@ a {
   color: #000000;
 }
 
-.contacts-address {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-  color: #666666;
-}
-
-.contacts-phone {
+.contacts-description {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -306,22 +294,11 @@ a {
 }
 
 .contacts-tel {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
   text-decoration: none;
-  color: #666666;
 }
 
 .contacts-button {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
   background-color: #fb565a;
-  border: none;
 }
 
 .contacts-button:hover,
@@ -341,6 +318,8 @@ a {
 }
 
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -378,7 +357,7 @@ a {
 
 .modal-input {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   text-align: left;
   color: rgba(68, 68, 68, 0.5);
@@ -408,15 +387,7 @@ a {
 }
 
 .modal-button-send {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
   background-color: #fb565a;
-  border: none;
 }
 
 .modal-button-send:hover,
@@ -446,7 +417,6 @@ a {
   text-transform: uppercase;
   text-align: left;
   color: #000000;
-  letter-spacing: 0.2px;
 }
 
 .range,
@@ -493,23 +463,16 @@ a {
 }
 
 .grid-label:hover {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
   color: #283136;
 }
 
 .grid-label:disabled {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
   color: rgba(40,49,54,0.3);
 }
 
 .show-button {
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -530,10 +493,10 @@ a {
 }
 
 .sorting-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-
-
 
 .sorting-item-link {
   font-size: 14px;
@@ -545,40 +508,30 @@ a {
 }
 
 .sorting-item-link:hover {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
   text-transform: uppercase;
   color: rgba(0,0,0,0.6);
 }
 
 .sorting-item-link:focus,
 .sorting-item-link:active {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
   text-transform: uppercase;
   color: rgba(0,0,0,1);
 }
 
 .sorting-item-current {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
   text-transform: uppercase;
-  color: rgba(0,0,0);
+  color: #000000;
 }
 
 .sorting-item-current:hover,
 .sorting-item-current:focus,
 .sorting-item-current:active {
-  color: rgba(0,0,0);
+  color: #000000;
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -603,15 +556,7 @@ a {
 }
 
 .catalog-button {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
   background-color: #fb565a;
-  border: none;
 }
 
 .catalog-button:hover,
@@ -624,6 +569,8 @@ a {
 }
 
 .pagination {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
@@ -637,17 +584,6 @@ a {
   color: #000000;
   background-color: #eeeeee;
   border: none;
-}
-
-.pagination-link-current {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
-  border: solid 3px #dbdbdb;
 }
 
 .pagination-link:hover {
@@ -673,39 +609,3 @@ a {
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
