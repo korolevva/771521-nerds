@@ -28,20 +28,18 @@ a {
   background-color: #eeeeee;
 }
 
-.logo-pointing {
+.main-header-logo[href] {
   opacity: 1;
 }
 
-.logo-pointing:hover,
-.logo-pointing:focus {
+.main-header-logo[href]:hover,
+.main-header-logo[href]:focus {
   opacity: 0.8;
 }
 
-.logo-pointing:active {
+.main-header-logo[href]:active {
   opacity: 0.3;
 }
-
-
 
 .button {
   font-size: 16px;
