@@ -81,20 +81,16 @@ a {
   list-style: none;
 }
 
-.navigation-link[href],
-.basket-link[href] {
+.navigation-link[href] {
   color: #000000;
 }
 
 .navigation-link[href]:hover,
-.navigation-link[href]:focus,
-.basket-link[href]:hover,
-.basket-link[href]:focus {
+.navigation-link[href]:focus {
   color: #fb565a;
 }
 
-.navigation-link[href]:active,
-.basket-link[href]:active {
+.navigation-link[href]:active {
   color: rgba(0,0,0,0.3);
 }
 
