@@ -583,10 +583,12 @@ input:disabled {
 .catalog-button:hover,
 .catalog-button:focus {
   background-color: #e74246;
+  color: #ffffff;
 }
 
 .catalog-button:active {
   background-color: #d7373b;
+  color: #ffffff;
 }
 
 .pagination {
@@ -615,6 +617,7 @@ input:disabled {
 .pagination-link:active {
   background-color: #d5d5d5;
   border-color: transparent;
+  color: rgba(0,0,0,0.3);
 }
 
 .pagination-link-current {
