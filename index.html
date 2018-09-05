@@ -9,31 +9,27 @@
    </head>
   <body>
     <header class="main-header">
-      <div class="main-container">
-        <div class="container">
+        <div class="flex-container">
           <span class="main-header-logo">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии nёrds">
           </span>
           <nav class="navigation">
-            <div class="navigation-wrapper">
               <ul class="navigation-list">
                 <li class="navigation-item"><a class="navigation-link" href="studio.html">Студия</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="customers.html">Клиенты</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="contacts.html">Контакты</a></li>
               </ul>
-              <a class="navigation-link" href="basket.html">Корзина</a>
-            </div>
+              <a class="navigation-link-basket" href="basket.html">Корзина</a>
           </nav>
         </div>
-      </div>
+
     </header>
 
     <main class="main-content">
       <h1 class="visually-hidden">Дизайн студия nёrds</h1>
       <section class="slider">
-        <div class="main-container">
-          <div class="container">
+          <div class="flex-container">
             <h2 class="visually-hidden">Слайдер</h2>
             <div class="slide active">
               <p class="slide-slogan">Долго, дорого, скрупулезно.</p>
@@ -51,16 +47,15 @@
               <a class="button slide-button" href="#target">Узнать больше</a>
             </div>
             <div class="controls-container">
-              <button class="slider-btn active">Слайд-1</button>
-              <button class="slider-btn">Слайд-2</button>
-              <button class="slider-btn">Слайд-3</button>
+              <button class="slider-btn active"></button>
+              <button class="slider-btn"></button>
+              <button class="slider-btn"></button>
             </div>
           </div>
-        </div>
       </section>
 
       <section class="features">
-       <div class="container">
+       <div class="flex-container">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="features-list">
           <li class="features-item">
@@ -86,9 +81,8 @@
       </section>
 
       <section class="about">
-        <div class="container">
+        <div class="flex-container">
           <h2 class="visually-hidden">О компании</h2>
-          <div class="about-column-wrapper">
             <div class="about-column">
               <p class="about-slogan"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
               <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -118,13 +112,12 @@
               </table>
             </div>
           </div>
-        </div>
+
       </section>
 
       <section class="projects">
-        <div class="container">
+        <div class="flex-container">
           <h2 class="visually-hidden">Наши проекты</h2>
-          <div class="projects-wrapper">
             <a class="projects-link" href="#target">
               <img src="img/logo-htmlacademy.png" width="260" height="180" alt="HTML Academy">
             </a>
@@ -137,12 +130,23 @@
             <a class="projects-link" href="#target">
               <img src="img/logo-mishka.png" width="260" height="180" alt="Mishka">
             </a>
+            <a class="projects-link" href="#target">
+              <img src="img/logo-mishka.png" width="260" height="180" alt="Mishka">
+            </a>
+            <a class="projects-link" href="#target">
+              <img src="img/logo-mishka.png" width="260" height="180" alt="Mishka">
+            </a>
+
+            <a class="projects-link" href="#target">
+              <img src="img/logo-mishka.png" width="260" height="180" alt="Mishka">
+            </a>
+            <a class="projects-link" href="#target">
+              <img src="img/logo-mishka.png" width="260" height="180" alt="Mishka">
+            </a>
           </div>
-        </div>
       </section>
 
       <section class="map">
-        <div class="main-container">
           <h2 class="visually-hidden">Карта</h2>
           <div class="contacts">
             <p class="contacts-title">Nёrds design studio</p>
@@ -153,15 +157,13 @@
           <div class="map-picture">
             <img src="img/map.jpg" width="1440" height="416" alt="Как нас найти">
           </div>
-        </div>
       </section>
 
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="flex-container">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="footer-wrapper">
         <div class="footer-social">
           <ul class="social-list">
             <li class="social-item">
@@ -186,11 +188,10 @@
           <p class="friends-discount">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
-      </div>
     </footer>
 
     <section class="modal">
-      <div class="container">
+      <div class="flex-container">
       <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
        <div class="half-width-wrapper">
@@ -213,7 +214,7 @@
           <span class="modal-name">Текст письма:</span>
           <textarea class="modal-input textarea" name="text-letter" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="modal-button-close" type="submit" value="Закрыть окно"></button>
+<!--        <button class="modal-button-close" type="submit" value="Закрыть окно"></button>-->
         <button class="button modal-button-send">Отправить</button>
       </form>
       </div>
