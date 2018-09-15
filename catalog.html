@@ -28,12 +28,15 @@
               <a class="navigation-link" href="contacts.html">Контакты</a>
             </li>
           </ul>
-          <a class="navigation-link-basket" href="basket.html">Корзина</a>
+
+          <div>
+              <a class="navigation-link-basket" href="basket.html">Корзина</a>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main class="container">
+    <main class="catalog-container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <div class="flex-container">
         <section class="filters">
@@ -46,7 +49,7 @@
               <div class="range-filter">
               <div class="range">
                 <div class="range-bar">
-                  <div class="range-bar-green"></div>
+                  <div class="range-bar-fill"></div>
                 </div>
                 <div class="range-grip range-grip-min"></div>
                 <div class="range-grip range-grip-max"></div>
@@ -131,11 +134,11 @@
           </form>
         </section>
 
-        <div class="flex-wrapper">
+        <div class="column-wrapper">
           <section class="sorting">
             <div class="sorting-flex-wrapper">
               <h2 class="visually-hidden">Сортировка</h2>
-              <p class="options-title">Сортировать:</p>
+              <p class="sorting-title">Сортировать:</p>
               <ul class="sorting-list">
                 <li class="sorting-item">
                   <a class="sorting-item-link sorting-item-current" href="#target">По цене</a>
@@ -162,7 +165,7 @@
             <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
-                <div class="browser">
+                <div class="catalog-item-head">
                   <img src="img/browser.svg" alt="" width="360" height="40">
                 </div>
                 <img src="img/sedona.jpg" width="360" height="576" alt="Sedona, информационный сайт для туристов">
@@ -176,7 +179,7 @@
               </li>
 
               <li class="catalog-item">
-                <div class="browser">
+                <div class="catalog-item-head">
                   <img src="img/browser.svg" alt="" width="360" height="40">
                 </div>
                 <img src="img/pink-app.jpg" width="360" height="576" alt="Pink App, продуктовый лендинг приложения для iOS и Android">
@@ -190,7 +193,7 @@
               </li>
 
               <li class="catalog-item">
-                <div class="browser">
+                <div class="catalog-item-head">
                   <img src="img/browser.svg" alt="" width="360" height="40">
                 </div>
                 <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop, сайт салона красоты для мужчин">
@@ -204,7 +207,7 @@
               </li>
 
               <li class="catalog-item">
-                <div class="browser">
+                <div class="catalog-item-head">
                   <img src="img/browser.svg" alt="" width="360" height="40">
                 </div>
                 <img src="img/mishka.jpg" width="360" height="576" alt="MISHKA, интернет-магазин вязаных игрушек">
@@ -218,7 +221,7 @@
               </li>
 
               <li class="catalog-item">
-                <div class="browser">
+                <div class="catalog-item-head">
                   <img src="img/browser.svg" alt="" width="360" height="40">
                 </div>
                 <img src="img/a-plus.jpg" width="360" height="576" alt="A Plus, лендинг курсов повышения квалификации">
@@ -232,7 +235,7 @@
               </li>
 
               <li class="catalog-item">
-                <div class="browser">
+                <div class="catalog-item-head">
                   <img src="img/browser.svg" alt="" width="360" height="40">
                 </div>
                 <img src="img/kvast.jpg" width="360" height="576" alt="КВАСТ, промо-сайт производителя крафтового кваса">
@@ -246,7 +249,7 @@
               </li>
             </ul>
           </section>
-            <ul class="pagination">
+          <ul class="pagination">
               <li>
                 <a class="pagination-link pagination-link-current">1</a>
               </li>
@@ -266,17 +269,18 @@
       <section class="map">
           <h2 class="visually-hidden">Карта</h2>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615906596!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462288580233"
+          <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615906596!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462288580233"
           style="border:0" allowfullscreen>
           </iframe>
 
-          <div class="contacts">
-            <p class="contacts-title">Nёrds design studio</p>
-            <p class="contacts-description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts-description phone">тел. <a class="contacts-tel" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-            <a class="contacts-button button" href="contacts.html">Напишите нам</a>
+          <div class="flex-container">
+            <div class="contacts">
+              <p class="contacts-title">Nёrds design studio</p>
+              <p class="contacts-description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts-description phone">тел. <a class="contacts-tel" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+              <a class="contacts-button button" href="contacts.html">Напишите нам</a>
+            </div>
           </div>
-          <div class="map-picture"></div>
       </section>
     </main>
 
