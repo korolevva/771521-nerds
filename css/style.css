@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  font-kerning: none;
   color: #283136;
   background-color: #ffffff;
 }
@@ -441,7 +442,7 @@ margin-right: 100px;
 }
 
 .about .flex-container {
-  padding: 40px 0;
+  padding: 40px 0 42px;
   justify-content: space-between;
   position: relative;
   border-top: 2px solid #eeeeee;
@@ -455,7 +456,7 @@ margin-right: 100px;
   margin: 0;
   padding: 0;
   margin-top: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: #000000;
 }
 
@@ -472,7 +473,7 @@ margin-right: 100px;
   line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   text-transform: uppercase;
   text-align: left;
   color: #283136;
@@ -484,6 +485,7 @@ margin-right: 100px;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 660px;
 }
 
 .about-item {
@@ -515,7 +517,7 @@ margin-right: 100px;
   width: 360px;
   height: 208px;
   margin-left: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   border: none;
   background-color: #fb565a;
   text-align: left;
@@ -665,9 +667,12 @@ margin-right: 100px;
   line-height: 18px;
   padding: 0;
   margin: 0;
-  padding-bottom: 20px;
   color: #666666;
   text-decoration: none;
+}
+
+.contacts-description {
+    padding-bottom: 20px;
 }
 
 .phone {
@@ -699,7 +704,7 @@ margin-right: 100px;
 
 .main-footer .flex-container {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
 }
 
 .friends {
@@ -756,6 +761,7 @@ margin-right: 100px;
 }
 
 .social-link:active {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1) inset;
   background-color: #d7373b;
   background-repeat: no-repeat;
 }
@@ -809,7 +815,7 @@ margin-right: 100px;
   border: 0;
   cursor: pointer;
   background-color: transparent;
-  opacity: 0.3;
+  opacity: 0.3;*/
 }
 
 .modal-button-close::before,
@@ -820,7 +826,7 @@ margin-right: 100px;
   left: 0;
   width: 25px;
   height: 3px;
-  background-color: rgba(251, 86, 90, 1);
+  background-color: rgba(215, 55, 59, 1);
 }
 
 .modal-button-close::before {
@@ -831,14 +837,13 @@ margin-right: 100px;
   transform: rotate(-45deg);
 }
 
-.modal-button-close:hover::before,
-.modal-button-close:hover::after {
-background-color: rgba(251, 86, 90, 1);
+.modal-button-close:focus,
+.modal-button-close:hover {
+  opacity: 1;
 }
 
-.modal-button-close:active::before,
-.modal-button-close:active::after {
-background-color: rgba(251, 86, 90, 0.1);
+.modal-button-close:active {
+  opacity: 0.1;
 }
 
 .modal {
@@ -960,7 +965,6 @@ display: flex;
 .modal-button-send {
   width: 260px;
   height: 50px;
-  margin-bottom: 84px;
   background-color: #fb565a;
 }
 
