@@ -1148,12 +1148,6 @@ catalog-container .flex-container {
   background: #f1f1f1;
 }
 
-.filter-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
 
 .filter-section:nth-child(2) .filter-title {
   padding-bottom: 15px;
@@ -1192,6 +1186,10 @@ catalog-container .flex-container {
   left: 0;
   top: 0;
   opacity: 0.4;
+}
+.grid-option,
+.specifics-label {
+  display: block;
 }
 
 .grid-option .filter-label::before  {
