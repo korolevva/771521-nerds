@@ -42,11 +42,11 @@ a {
 
 .button:hover,
 .button:focus {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1) inset;
   background-color: #e74246;
 }
 
 .button:active {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1) inset;
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -76,6 +76,13 @@ a {
 
 .flex-container {
   display: flex;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container-content {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -251,6 +258,8 @@ a {
   display: block;
 }
 
+
+
 #slide-1:checked ~ .controls-container .controls-container-slide1::before,
 #slide-2:checked ~ .controls-container .controls-container-slide2::before,
 #slide-3:checked ~ .controls-container .controls-container-slide3::before {
@@ -265,6 +274,16 @@ a {
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+
+
+#slide-1:hover ~ .controls-container .controls-container-slide1::after,
+#slide-2:hover ~ .controls-container .controls-container-slide2::after,
+#slide-3:hover ~ .controls-container .controls-container-slide3::after,
+#slide-1:focus ~ .controls-container .controls-container-slide1::after,
+#slide-2:focus ~ .controls-container .controls-container-slide2::after,
+#slide-3:focus ~ .controls-container .controls-container-slide3::after {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .slide-slogan {
@@ -422,7 +441,7 @@ margin-right: 100px;
 }
 
 .about .flex-container {
-  padding: 40px 20px;
+  padding: 40px 0;
   justify-content: space-between;
   position: relative;
   border-top: 2px solid #eeeeee;
@@ -615,7 +634,6 @@ margin-right: 100px;
   padding-right: 0;
   padding-top: 55px;
   padding-bottom: 55px;
-  padding-left: 20px;
 }
 
 .contacts {
@@ -1144,6 +1162,10 @@ catalog-container .flex-container {
   opacity: 0.1;
 }
 
+.grid-option input:focus + .filter-label::before {
+  opacity: 1;
+}
+
 .grid-option .filter-label::before {
   background-image: url(../img/radio-off.svg);
 }
@@ -1160,10 +1182,14 @@ catalog-container .flex-container {
   opacity: 0.1;
 }
 
+.specifics-label input:focus + .filter-label::before {
+  opacity: 1;
+}
+
 .specifics-label .filter-label::before {
   background-image: url(../img/checkbox-off.svg);
 }
-.filter-label:focus::before,
+
 .filter-label:hover::before {
   opacity: 1;
 }
@@ -1185,6 +1211,7 @@ catalog-container .flex-container {
   width: 260px;
   color: #000000;
   background-color: #eeeeee;
+  cursor: pointer
 }
 
 .show-button:hover,
@@ -1305,11 +1332,16 @@ catalog-container .flex-container {
   margin-bottom: 33px;
   margin-right: 40px;
   border-radius: 3px;
-  outline: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.catalog-item img{
-outline: 1px solid rgba(0, 0, 0, 0.1);
+.catalog-image{
+  border-style: inset;
+  border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
+.catalog-image img {
+  vertical-align: bottom;
+  width: 358px;
 }
 
 .catalog-item:hover {
@@ -1407,14 +1439,13 @@ outline: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: 500;
   line-height: 45px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 15px;
   border-radius: 3px;
   text-align: center;
   padding-top: 0;
   text-transform: uppercase;
   color: #000000;
   background-color: #eeeeee;
-  border: solid 3px transparent;
   text-align: center;
 }
 
@@ -1429,14 +1460,15 @@ outline: 1px solid rgba(0, 0, 0, 0.1);
 
 .pagination-link:active {
   background-color: #d5d5d5;
-  border-color: transparent;
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .pagination-link-current {
   color: #000000;
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
+  box-sizing: border-box;
 }
 
 .pagination-link-current:hover,
@@ -1445,4 +1477,5 @@ outline: 1px solid rgba(0, 0, 0, 0.1);
   color: #000000;
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
+  box-shadow: none;
 }
