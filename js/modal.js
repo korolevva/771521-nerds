@@ -10,13 +10,16 @@
 
   try {
     storage = localStorage.getItem("username");
+
   } catch (err) {
     isStorageSupport = false;
+
   }
+
   write.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.add("modal-show");
-  if (storage) {
+    evt.preventDefault();
+    modal.classList.add("modal-show");
+    if (storage) {
       username.value = storage;
       email.focus();
     } else {
@@ -25,9 +28,9 @@
   });
 
   close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("modal-show");
-  modal.classList.remove("modal-error");
+    evt.preventDefault();
+    modal.classList.remove("modal-show");
+    modal.classList.remove("modal-error");
   });
 
   formModal.addEventListener("submit", function (evt) {
@@ -39,7 +42,7 @@
       modal.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
-      localStorage.setItem("username", username.value);
+        localStorage.setItem("username", username.value);
       }
     }
   });
