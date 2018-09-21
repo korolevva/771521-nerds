@@ -1353,53 +1353,55 @@ a {
   margin-left: auto
 }
 
-.sorting-dir-down {
+.sorting-dir-link::after {
+  content: '';
   vertical-align: middle;
-  margin: 2px 4px 0 0px;
   display: inline-block;
   width: 0;
   height: 0;
+}
+
+.sorting-dir-down::after {
+  content: '';
+  margin: 2px 4px 0 0px;
   border-top: 10px solid rgba(166, 166, 166, 0.2);
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
 }
 
-.sorting-dir-up {
-  vertical-align: middle;
-  margin: 2px 0 0 11px;
-  display: inline-block;
-  width: 0;
-  height: 0;
+.sorting-dir-up::after {
+  content: '';
+  margin: 2px 0 0 14px;
   border-bottom: 10px solid rgba(166, 166, 166, 0.2);
   border-left: 6px solid transparent;
   border-right: 5px solid transparent;
 }
 
-.sorting-dir-down:focus,
-.sorting-dir-down:hover {
+.sorting-dir-down:focus::after,
+.sorting-dir-down:hover::after {
   border-top-color: rgba(166, 166, 166, 1);
 }
 
-.sorting-dir-up:focus,
-.sorting-dir-up:hover {
+.sorting-dir-up:focus::after,
+.sorting-dir-up:hover::after {
   border-bottom-color: rgba(166, 166, 166, 1);
 }
 
-.sorting-dir-down:active {
+.sorting-dir-down:active::after {
   border-top-color: rgba(35, 31, 32, 1);
 }
 
-.sorting-dir-up:active {
+.sorting-dir-up:active::after {
   border-bottom-color: rgba(35, 31, 32, 1);
 }
 
-.sorting-dir-current {
+.sorting-dir-current::after {
   border-top-color: rgba(35, 31, 32, 1);
 }
 
-.sorting-dir-current:hover,
-.sorting-dir-current:focus,
-.sorting-dir-current:active {
+.sorting-dir-current:hover::after,
+.sorting-dir-current:focus::after,
+.sorting-dir-current:active::after {
   border-top-color: rgba(35, 31, 32, 1);
 }
 

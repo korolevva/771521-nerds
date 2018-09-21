@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Дизайн студия nёrds</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -129,14 +129,12 @@
               <p class="sorting-title">Сортировать:</p>
               <ul class="sorting-list">
                <li class="sorting-dir">
-                  <a class="sorting-dir-link" href="#target">
-                    <span class="sorting-dir-down sorting-dir-current"></span>
+                  <a class="sorting-dir-link sorting-dir-down sorting-dir-current" href="#target">
                     <span class="visually-hidden">
                       По убыванию
                     </span>
                   </a>
-                  <a class="sorting-dir-link" href="#target">
-                  <span class="sorting-dir-up"></span>
+                  <a class="sorting-dir-link sorting-dir-up" href="#target">
                     <span class="visually-hidden">
                       По возрастанию
                     </span>
@@ -323,7 +321,7 @@
       </div>
       <button class="modal-button-close" type="button">
         <span class="visually-hidden">
-          Закрыть модальное окно формы
+          Закрыть
         </span>
       </button>
       <button class="button modal-button-send">Отправить</button>
