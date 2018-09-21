@@ -1363,7 +1363,7 @@ a {
 
 .sorting-dir-down::after {
   content: '';
-  margin: 2px 4px 0 0px;
+  margin: 2px 4px 0 0;
   border-top: 10px solid rgba(166, 166, 166, 0.2);
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;

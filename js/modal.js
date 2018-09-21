@@ -2,9 +2,9 @@ var write = document.querySelector(".contacts-button");
 var modal = document.querySelector(".modal");
 var close = modal.querySelector(".modal-button-close");
 var formModal = modal.querySelector(".modal-form");
-var username = document.querySelector("[name=username]");
-var email = document.querySelector("[name=e-mail]");
-var message = document.querySelector("[name=text-letter]");
+var username = formModal.querySelector("#username");
+var email = formModal.querySelector("#e-mail");
+var message = formModal.querySelector("#text-letter");
 var isStorageSupport = true;
 var storage = "";
 
